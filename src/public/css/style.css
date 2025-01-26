@@ -1,0 +1,221 @@
+:root {
+    --color-bgPrimary: #F3F3F6;
+    --color-bgSecondary: #FFFFFF;
+    --color-accentPrimary: #2525D0;
+    --color-accentPrimaryHover: #2929a3;
+    --color-accentTertiary: #BC5AED;
+    --color-accentSecondary: #F8F8FC;
+    --color-accentSecondaryHover: #EAEAF6;
+    --color-feedBackInfo: #EEF2FC;
+    --color-feedBackError: #ff96b7;
+    --color-feedBackSuccess: #b9e39a;
+    --color-feedBackWarning: #F8FAD1;
+    --color-contrastDark: #F4F4F6;
+    --color-contrastLight: #26262C;
+    --color-neutral100: #383842;
+    --color-neutral200: #676779;
+    --color-neutral300: #9c9cab;
+    --color-neutral400: #d8d8de;
+    --color-neutral500: #e9e9ec;
+
+    --types-titleHero: 3rem;
+    --types-subTitle: 2rem;
+    --types-smallSubTitle: 1.5rem;
+    --types-textLarge: 1.2rem;
+    --types-text: 1rem;
+    --types-label: 0.875rem;
+    --types-label: 0.75rem;
+
+    --sm: 0.5rem;
+    --md: 1rem;
+    --xl: 2rem;
+}
+
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes bouncy {
+    0%,
+    100%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    
+}
+
+body {
+    background-color: #FFF;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.status-info{
+    background-color: var(--color-bgPrimary);
+}
+
+.status-success{
+    background-color: var(--color-feedBackSuccess);
+}
+
+.status-error{
+    background-color: var(--color-feedBackError);
+}
+
+.loader{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 1;
+    background-color: var(--color-bgPrimary);
+}
+
+.message-output{
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 2rem;
+    border: solid 2px var(--color-neutral200);
+    border-radius: var(--md);
+    animation: bouncy 0.8s ease-in-out infinite;
+
+    p, 
+    span{
+        font-size: var(--types-textLarge);
+        font-weight: 500;
+        color: var(--color-contrastLight);
+    }
+}
+
+.headerDsa{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--md);
+    background-color: var(--color-bgPrimary);
+
+    .menu{
+        display: flex;
+        gap: var(--md);
+
+        img{
+            width: 6rem;;
+        }
+    }
+
+    .title{
+        font-size: var(--types-textLarge);
+        color: var(--color-neutral100);
+        font-weight: 500;
+    }
+
+    .powerby{
+        display: flex;
+        gap: var(--sm);
+
+        img{
+            width: 8rem
+        }
+    }
+}
+
+.cards-container {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: var(--xl);
+    padding: 1rem;
+
+    .card {
+        position: relative;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        padding: var(--md);
+        border: solid 2px var(--color-neutral400);
+        border-radius: var(--md);
+        background-color: var(--color-bgPrimary);
+        overflow: hidden;
+
+        ::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 70%;
+            height: 0.25rem;
+            border-radius: var(--xl);
+            background-color: blue;
+        }
+
+        .content {
+            width: 100%;
+
+            .title{
+                display: flex;
+                align-items: start;
+                justify-content: space-between;
+                             
+                h3 {
+                    font-size: var(--types-textLarge);
+                    font-weight: 500;
+                    color: var(--color-contrastLight);
+                }
+            }
+
+
+            .infos {
+                margin-top: var(--md);
+
+                .status {
+                    margin-top: var(--sm);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 2rem;
+
+                    p {
+                        font-size: var(--types-text);
+                        color: var(--color-neutral100);
+                    }
+
+                    span {
+                        font-size: var(--types-text);
+                        font-weight: 500;
+                        padding: 0.25rem 0.5rem;
+                        border-radius: var(--sm)
+                    }
+                }
+            }
+        }
+
+        img {
+            width: 40px;
+        }
+
+    }
+}
+
+.d-none{
+    display: none;
+}
+
+.d-flex{
+    display: flex;
+}

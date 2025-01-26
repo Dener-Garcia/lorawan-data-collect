@@ -1,0 +1,911 @@
+[
+    {
+        "val_workcenter": "SD16",
+        "devAddr": "FFA38AFC",
+        "data": {
+            "info": {
+                "devaddr": "FFA38AFC",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T09:39:33Z",
+                "fcnt": "60",
+                "rssi": "1",
+                "packet_loss": "3.28",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI1": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI2": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI3": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32770,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI4": {
+                    "Range": 0,
+                    "RawData": 0,
+                    "Event": 0,
+                    "MaxVal": 0,
+                    "MinVal": 0,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "GNSS": {
+                    "Latitude": "0.000000 N",
+                    "Longitude": "0.000000 E"
+                }
+            }
+        }
+    },
+    {
+        "val_workcenter": "SD21",
+        "devAddr": "FF97867A",
+        "data": {
+            "info": {
+                "devaddr": "FF97867A",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T15:43:40Z",
+                "fcnt": "6461",
+                "rssi": "-91",
+                "packet_loss": "34.20",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 1,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI1": {
+                    "value": 3,
+                    "status": {
+                        "SignalLogic": 1,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI2": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI3": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32771,
+                    "Event": 0,
+                    "MaxVal": 32771,
+                    "MinVal": 32770,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI4": {
+                    "Range": 0,
+                    "RawData": 0,
+                    "Event": 0,
+                    "MaxVal": 0,
+                    "MinVal": 0,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "GNSS": {
+                    "Latitude": "0.000000 N",
+                    "Longitude": "0.000000 E"
+                }
+            }
+        }
+    },
+    {
+        "val_workcenter": "SD22",
+        "devAddr": "FFA38B17",
+        "data": {
+            "info": {
+                "devaddr": "FFA38B17",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T15:43:41Z",
+                "fcnt": "6351",
+                "rssi": "-97",
+                "packet_loss": "78.17",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 36,
+                    "status": {
+                        "SignalLogic": 1,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI1": {
+                    "value": 35,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI2": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI3": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32768,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32768,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32768,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32768,
+                    "MinVal": 32764,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI4": {
+                    "Range": 0,
+                    "RawData": 0,
+                    "Event": 0,
+                    "MaxVal": 0,
+                    "MinVal": 0,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "GNSS": {
+                    "Latitude": "0.000000 N",
+                    "Longitude": "0.000000 E"
+                }
+            }
+        }
+    },
+    {
+        "val_workcenter": "SD23",
+        "devAddr": "FFA38AFF",
+        "data": {
+            "info": {
+                "devaddr": "FFA38AFF",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T15:43:40Z",
+                "fcnt": "5879",
+                "rssi": "-110",
+                "packet_loss": "43.05",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 29,
+                    "status": {
+                        "SignalLogic": 1,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI1": {
+                    "value": 28,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI2": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI3": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32769,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32768,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32768,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI4": {
+                    "Range": 0,
+                    "RawData": 0,
+                    "Event": 0,
+                    "MaxVal": 0,
+                    "MinVal": 0,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "GNSS": {
+                    "Latitude": "0.000000 N",
+                    "Longitude": "0.000000 E"
+                }
+            }
+        }
+    },
+    {
+        "val_workcenter": "Sd31",
+        "devAddr": "FFA38B06",
+        "data": {
+            "info": {
+                "devaddr": "FFA38B06",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T15:43:14Z",
+                "fcnt": "5925",
+                "rssi": "-106",
+                "packet_loss": "46.57",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 46,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI1": {
+                    "value": 81,
+                    "status": {
+                        "SignalLogic": 1,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI2": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI3": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32770,
+                    "Event": 0,
+                    "MaxVal": 32771,
+                    "MinVal": 32770,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI4": {
+                    "Range": 0,
+                    "RawData": 0,
+                    "Event": 0,
+                    "MaxVal": 0,
+                    "MinVal": 0,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "GNSS": {
+                    "Latitude": "0.000000 N",
+                    "Longitude": "0.000000 E"
+                }
+            }
+        }
+    },
+    {
+        "val_workcenter": "Sd41",
+        "devAddr": "FF978689",
+        "data": {
+            "info": {
+                "devaddr": "FF978689",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T15:43:35Z",
+                "fcnt": "6373",
+                "rssi": "-87",
+                "packet_loss": "35.93",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 2,
+                    "status": {
+                        "SignalLogic": 1,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI1": {
+                    "value": 1,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI2": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI3": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32924,
+                    "Event": 0,
+                    "MaxVal": 32925,
+                    "MinVal": 32770,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32774,
+                    "Event": 0,
+                    "MaxVal": 32775,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32769,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32769,
+                    "Event": 0,
+                    "MaxVal": 32769,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI4": {
+                    "Range": 0,
+                    "RawData": 0,
+                    "Event": 0,
+                    "MaxVal": 0,
+                    "MinVal": 0,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "GNSS": {
+                    "Latitude": "0.000000 N",
+                    "Longitude": "0.000000 E"
+                }
+            }
+        }
+    },
+    {
+        "val_workcenter": "SD62",
+        "devAddr": "FFA38B0F",
+        "data": {
+            "info": {
+                "devaddr": "FFA38B0F",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T09:29:53Z",
+                "fcnt": "305",
+                "rssi": "-107",
+                "packet_loss": "1.01",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 2,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI1": {
+                    "value": 148,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI2": {
+                    "value": 2,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "DI3": {
+                    "value": 329,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 1,
+                        "GetCleanH2LLatch": 1
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32773,
+                    "Event": 0,
+                    "MaxVal": 32779,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32769,
+                    "Event": 0,
+                    "MaxVal": 32775,
+                    "MinVal": 32769,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32771,
+                    "Event": 0,
+                    "MaxVal": 32776,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32771,
+                    "Event": 0,
+                    "MaxVal": 32776,
+                    "MinVal": 32768,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI4": {
+                    "Range": 0,
+                    "RawData": 0,
+                    "Event": 0,
+                    "MaxVal": 0,
+                    "MinVal": 0,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "GNSS": {
+                    "Latitude": "0.000000 N",
+                    "Longitude": "0.000000 E"
+                }
+            }
+        }
+    },
+    {
+        "val_workcenter": "SD63",
+        "devAddr": "FF978681",
+        "data": {
+            "info": {
+                "devaddr": "FF978681",
+                "model": "WISE4610-S614",
+                "datetime": "2024-12-20T09:55:25Z",
+                "fcnt": "163",
+                "rssi": "-53",
+                "packet_loss": "0.72",
+                "fport": "1",
+                "bat": "0"
+            },
+            "data": {
+                "DI0": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI1": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI2": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "DI3": {
+                    "value": 0,
+                    "status": {
+                        "SignalLogic": 0,
+                        "StartCounter": 1,
+                        "GetCleanCounterOverflow": 0,
+                        "GetCleanL2HLatch": 0,
+                        "GetCleanH2LLatch": 0
+                    }
+                },
+                "AI0": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32774,
+                    "MinVal": 32763,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI1": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32773,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI2": {
+                    "Range": 4,
+                    "RawData": 32768,
+                    "Event": 0,
+                    "MaxVal": 32773,
+                    "MinVal": 32767,
+                    "status": {
+                        "LowAlarm": 0,
+                        "HighAlarm": 0
+                    }
+                },
+                "AI3": {
+                    "Range": 4,
+                    "RawData": 32768
