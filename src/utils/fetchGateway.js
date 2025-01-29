@@ -17,7 +17,10 @@ const fetchDeviceData = async (gatewayUrl, username, password, devAddr) => {
     }
 
     const data = await response.json();
-    return data
+
+  //  console.log(data)
+    
+  return data
   } catch (error) {
     if (error.name === 'AbortError') {
       console.error(`[ERRO] Timeout: O dispositivo ${devAddr} não respondeu dentro do tempo limite.`);

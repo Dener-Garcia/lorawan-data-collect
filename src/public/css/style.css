@@ -74,14 +74,13 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
     z-index: 1;
-    background-color: var(--color-bgPrimary);
 }
 
 .message-output{
@@ -138,8 +137,8 @@ body {
 .cards-container {
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-    gap: var(--xl);
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--md);
     padding: 1rem;
 
     .card {
