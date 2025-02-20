@@ -5,6 +5,9 @@ import { convertStatusText } from "./helpers/convertStatusText.mjs";
 const cardsContainer = document.querySelector(".cards-container")
 const loaderContainer = document.querySelector(".loader")
 
+const ipGatewayLora = "10.116.130.4"
+// const ipGatewayLora = "localhost" 
+
 
 window.onload = (event) => {
     loaderContainer.innerHTML = splash()
@@ -21,7 +24,7 @@ const getDevice = async () => {
        loadScreen("Buscando dados", "status-info", "")
        loaderContainer.classList.remove("d-none")       
 
-        const response = await fetch("http://localhost:3050/twi")
+        const response = await fetch(`http://${ipGatewayLora}:3050/twi`)
 
         //console.log(data)
 
