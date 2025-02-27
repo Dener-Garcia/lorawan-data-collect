@@ -4,11 +4,12 @@ const router = express.Router()
 
 
 const readTwiMachine = require('./controllers/twi')
+const readMachinesController = require('./controllers/readMachinesController')
 
 
 router.get("/twi", readTwiMachine)
 
-router.get("/machine", getData)
+router.get("/machines/:typeMachine", readMachinesController.readMachines)
 
 router.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
