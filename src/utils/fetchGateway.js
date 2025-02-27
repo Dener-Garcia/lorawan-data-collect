@@ -9,7 +9,7 @@ const fetchDeviceData = async (gatewayUrl, username, password, devAddr) => {
       headers: {
         Authorization: `Basic ${auth}`,
       },
-      timeout: 6000,
+      timeout: 10000,
     });
 
     if (!response.ok) {
