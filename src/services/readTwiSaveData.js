@@ -15,7 +15,7 @@ const collectAndSaveData = async (req, res) => {
 
   for (const device of devicesRemoteIo){
     const { val_workcenter, machine, devAddr } = device;
-    console.log("device dados", val_workcenter, machine, devAddr)
+   // console.log("device dados", val_workcenter, machine, devAddr)
 
     try {
       const response = await fetchDeviceData(
@@ -59,6 +59,6 @@ const collectAndSaveData = async (req, res) => {
   
 };
 
-setInterval(collectAndSaveData, 5000);
+setInterval(collectAndSaveData, 30000);
 
 module.exports = collectAndSaveData;

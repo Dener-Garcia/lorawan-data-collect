@@ -1,7 +1,6 @@
 const pool = require('./dbConnect');
 
 const registerFieldTag = async (fieldTags) => {
-  console.log("dentro model", fieldTags);
 
   const query = `
     INSERT INTO iot_lorawan (

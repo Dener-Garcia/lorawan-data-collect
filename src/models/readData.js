@@ -5,8 +5,12 @@ const readMachines = async (machine) => {
 
     const query = `
         SELECT * FROM iot_lorawan
+        WHERE machine = $1
+        ORDER BY record_timestamp DESC
     `
-    return await pool.query(query)
+   const result = await pool.query(query, [machine])
+    console.log(result)
+    return {rows} = result
 }
 
 module.exports = {

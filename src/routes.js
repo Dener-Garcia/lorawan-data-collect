@@ -5,7 +5,7 @@ const router = express.Router()
 
 const readTwiMachine = require('./controllers/twi')
 const readMachinesController = require('./controllers/readMachinesController')
-
+const readTwiSaveData = require('./services/readTwiSaveData')
 
 router.get("/twi", readTwiMachine)
 
