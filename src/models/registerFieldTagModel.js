@@ -1,6 +1,6 @@
 const pool = require('./dbConnect');
 
-const registerFieldTag = async (fieldTags) => {
+const registerFieldTagModel = async (fieldTags) => {
 
   const query = `
     INSERT INTO iot_lorawan (
@@ -29,6 +29,5 @@ const registerFieldTag = async (fieldTags) => {
   return ids;  // Retorna os IDs de todos os registros inseridos
 };
 
-module.exports = {
-  registerFieldTag
-};
+module.exports = registerFieldTagModel
+
