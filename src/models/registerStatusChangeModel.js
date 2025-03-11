@@ -1,10 +1,10 @@
-const pool = require("./dbConnect");
+const pool = require("./connectMySql");
 
 const registerChangeStatusModel = async (fieldTags, duration) => {
   const query = `
     INSERT INTO lorawan_consolidation (
         dev_address, dev_model, machine, val_workcenter, input_name, input_category, input_value, dtt_start, dtt_duration
-        ) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9)
+        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         RETURNING id
         `;
 

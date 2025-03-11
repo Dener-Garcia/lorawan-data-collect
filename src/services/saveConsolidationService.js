@@ -1,5 +1,5 @@
 const { devicesRemoteIo } = require("../devices/devicesList");
-const pool = require("../models/dbConnect");
+const pool = require("../models/connectMySql");
 const readStatusCategoryModel = require("../models/readStatusCategoryModel");
 const registerChangeStatusModel = require("../models/registerStatusChangeModel");
 const registerChangeStatus = require("../models/registerStatusChangeModel");
