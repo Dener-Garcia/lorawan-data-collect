@@ -5,7 +5,7 @@ const gatewayUrl = process.env.GATEWAYURL
 const gatewayUser = process.env.GATEWAYUSERNAME;
 const gatewayPassword = process.env.GATEWAYPASSWORD;
 
-  const readTwiMachine = async (req, res) => {
+  const readAllRemoteIoController = async (req, res) => {
 
       const results = []
 
@@ -36,7 +36,7 @@ const gatewayPassword = process.env.GATEWAYPASSWORD;
 
   }
 
-  module.exports = readTwiMachine
+  module.exports = readAllRemoteIoController
 
 
 

@@ -7,8 +7,6 @@ const registerFieldTagModel = async (fieldTags) => {
     ) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
   `;
 
-  console.log(fieldTags);
-
   for (const tag of fieldTags) {
 
     const values = [

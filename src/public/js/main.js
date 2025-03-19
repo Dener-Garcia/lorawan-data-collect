@@ -1,12 +1,15 @@
 import {loaderApex} from "../assets/apex-loader.mjs";
 import {splash} from "../assets/apex-splash.mjs"
 import { convertStatusText } from "./helpers/convertStatusText.mjs";
+import navBarMenu from "./ui/navBar.mjs";
 
 const cardsContainer = document.querySelector(".cards-container")
 const loaderContainer = document.querySelector(".loader")
 
 const ipRasp = "10.116.130.3"
-// const ipRasp = "localhost" 
+// const ipRasp = "localhost" // for developer mode
+
+navBarMenu(ipRasp)
 
 
 window.onload = (event) => {
@@ -24,7 +27,7 @@ const getDevice = async () => {
        loadScreen("Buscando dados", "status-info", "")
        loaderContainer.classList.remove("d-none")       
 
-        const response = await fetch(`http://${ipRasp}:3050/twi`)
+        const response = await fetch(`http://${ipRasp}:3050/readAllRemoteIo`)
 
         //console.log(data)
 
@@ -49,8 +52,6 @@ const getDevice = async () => {
 
             const statusDI0 = convertStatusText(DI0.status.SignalLogic);
             const statusDI1 = convertStatusText(DI1.status.SignalLogic);
-            const statusDI2 = convertStatusText(DI2.status.SignalLogic);
-            const statusDI3 = convertStatusText(DI3.status.SignalLogic);
 
             const card = document.createElement("div")
 

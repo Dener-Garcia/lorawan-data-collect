@@ -1,12 +1,20 @@
 const mysql = require('mysql2/promise.js');
 
-console.log("dentro arquivo configuracao")
+// console.log("dentro arquivo configuracao")
+// var pool  = mysql.createPool({
+//   connectionLimit : 10,
+//   host : process.env.RASPIP,
+//   user : process.env.DBMYSQLUSER,
+//   password : process.env.DBMYSQLPASSWORD,
+//   database : process.env.DBMYSQLDATABASE
+// });
+
 var pool  = mysql.createPool({
   connectionLimit : 10,
-  host : 'localhost',
+  host :'localhost',
   user : 'root',
   password : 'Dagaxl',
-  database : 'dw_lorawan'
+  database : process.env.DBMYSQLDATABASE
 });
 
     //const nameDb = response.rows[0].dbname

@@ -10,7 +10,7 @@ const readStatusCategoryModel = async (workcenter) => {
 `;
 
   try {
-    const inputs = await pool.execute(query, [workcenter]);
+    const [inputs] = await pool.execute(query, [workcenter]);
     return inputs;
   } catch (error) {
     console.log("erro banco", error);

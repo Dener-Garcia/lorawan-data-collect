@@ -9,35 +9,6 @@ const gatewayPassword = process.env.GATEWAYPASSWORD;
 const fieldDataCollectService = async () => {
   console.log("Running routine each 30s - field data collect service");
 
-  // let saveData = [
-  //   fieldTag = {
-  //     dev_address: "device 1",
-  //     dev_model: "model 1",
-  //     machine: "Machine 1",
-  //     val_workcenter: "SD22 1",
-  //     input_name: "status machine",
-  //     input_category:"status machine",
-  //     input_value: 1,
-  //     input_generic: 'DI0',
-  //   },
-  //   fieldTag = {
-  //     dev_address: "device 1",
-  //     dev_model: "model 1",
-  //     machine: "Machine 1",
-  //     val_workcenter: "SD22 1",
-  //     input_name: "Machine running",
-  //     input_category:"status machine",
-  //     input_value: 1,
-  //     input_generic: 'DI1',
-  //   }
-  // ]
-
-
-  // registerFieldTagModel(saveData)
-
-
-  // return // teste sem conxexao twi
-
   for (const device of devicesRemoteIo) {
     const { val_workcenter, machine, devAddr, inputs } = device;
 
