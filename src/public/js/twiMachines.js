@@ -1,19 +1,19 @@
 import { getData } from "./api/getData.mjs";
 import navBarMenu from "./ui/navBar.mjs";
+import {configurations} from './constants/configurations.mjs';
 
 const cardsContainer = document.querySelector(".cards-container");
 const loaderContainer = document.querySelector(".loader");
 const historyContainer = document.querySelector(".history-container")
 
-// const ipRasp = "10.116.130.3";
-const ipRasp = "localhost";
+//configurations.ipRasp = "localhost"; // para teste local
 
-navBarMenu(ipRasp)
+navBarMenu(configurations.ipRasp)
 
 
 const readTwiMachines = async () => {
   try {
-    const response = await getData(`http://${ipRasp}:3050/machines/twi_machine`);
+    const response = await getData(`http://${configurations.ipRasp}:3050/machines/twi_machine`);
 
     cardsContainer.innerHTML = "";
 
@@ -96,7 +96,7 @@ const limit = 3600
 const showHistoric = async (workcenter, limit, offset) => {
     console.log("Chamei historico", workcenter, limit, offset)
     try {
-        const result = await getData(`http://${ipRasp}:3050/machine/?workcenter=${workcenter}&limit=${limit}&offset=${offset}` 
+        const result = await getData(`http://${configurations.ipRasp}:3050/machine/?workcenter=${workcenter}&limit=${limit}&offset=${offset}` 
         )
     
         if (result.length > 0){

@@ -120,7 +120,7 @@ body {
     justify-content: space-between;
     padding: var(--md);
     background-color: var(--color-bgPrimary);
-    z-index: 1;
+    z-index: 1000;
 
     .menu{
         display: flex;
@@ -161,7 +161,7 @@ body {
     height: 100vh;
     padding: 1rem;
     background-color: var(--color-bgPrimary);
-    z-index: 1;
+    z-index: 1000;
     box-shadow: 0px 15px 16px rgba(0, 0, 0, 0.3);
     transition: 0.2s ease-in;
     transform: translateX(-100%);
@@ -273,7 +273,7 @@ body {
     top: 0;
     left: 0;
     display: none;
-    padding: 2rem 6rem;
+    padding: 6rem;
     background-color: rgba(0, 0, 0, 0.8);
     overflow: hidden;
     z-index: 2;

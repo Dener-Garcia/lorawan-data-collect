@@ -2,14 +2,17 @@ import {loaderApex} from "../assets/apex-loader.mjs";
 import {splash} from "../assets/apex-splash.mjs"
 import { convertStatusText } from "./helpers/convertStatusText.mjs";
 import navBarMenu from "./ui/navBar.mjs";
+import {configurations} from './constants/configurations.mjs'
 
 const cardsContainer = document.querySelector(".cards-container")
 const loaderContainer = document.querySelector(".loader")
 
-const ipRasp = "10.116.130.3"
-// const ipRasp = "localhost" // for developer mode
 
-navBarMenu(ipRasp)
+//configurations.ipRasp = "localhost"; // para teste local
+
+ 
+
+navBarMenu(configurations.ipRasp)
 
 
 window.onload = (event) => {
@@ -27,7 +30,7 @@ const getDevice = async () => {
        loadScreen("Buscando dados", "status-info", "")
        loaderContainer.classList.remove("d-none")       
 
-        const response = await fetch(`http://${ipRasp}:3050/readAllRemoteIo`)
+        const response = await fetch(`http://${configurations.ipRasp}:3050/readAllRemoteIo`)
 
         //console.log(data)
 
