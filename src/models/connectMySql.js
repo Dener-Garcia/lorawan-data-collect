@@ -1,31 +1,29 @@
 const mysql = require('mysql2/promise.js');
 
-// console.log("dentro arquivo configuracao")
-// var pool  = mysql.createPool({
-//   connectionLimit : 10,
-//   host : process.env.RASPIP,
-//   user : process.env.DBMYSQLUSER,
-//   password : process.env.DBMYSQLPASSWORD,
-//   database : process.env.DBMYSQLDATABASE
-// });
+console.log("dentro arquivo configuracao banco", process.env.RASPIP, process.env.DBMYSQLUSER, process.env.DBMYSQLPASSWORD, process.env.DBMYSQLDATABASE)
 
-var pool  = mysql.createPool({
-  connectionLimit : 10,
-  host :'localhost',
-  user : 'root',
-  password : 'Dagaxl',
-  database : process.env.DBMYSQLDATABASE
+var pool = mysql.createPool({
+  connectionLimit : 20,
+  host : process.env.RASPIP,
+  user : process.env.DBMYSQLUSER,
+  password : process.env.DBMYSQLPASSWORD,
+  database : process.env.DBMYSQLDATABASE,
+  connectTimeout: 20000,
 });
 
-    //const nameDb = response.rows[0].dbname
-  //  console.log("Conexão com banco realizada com sucesso ", results, fields)
- //   return nameDb
+// var pool  = mysql.createPool({
+//   connectionLimit : 10,
+//   host :'localhost',
+//   user : 'root',
+//   password : 'Dagaxl',
+//   database : process.env.DBMYSQLDATABASE
+// });
 
 const testConnection = async () => {
 
   try {
-
     // execute will internally call prepare and query
+    console.log("Tentando conectar ao banco")
     const response = await pool.execute('SELECT database() AS dbname')
     const nameDb = response[0]
     console.log("Conexão com banco de dados realizada com sucesso " + nameDb[0].dbname)
