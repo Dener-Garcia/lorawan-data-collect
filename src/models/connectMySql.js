@@ -3,12 +3,11 @@ const mysql = require('mysql2/promise.js');
 console.log("dentro arquivo configuracao banco", process.env.RASPIP, process.env.DBMYSQLUSER, process.env.DBMYSQLPASSWORD, process.env.DBMYSQLDATABASE)
 
 var pool = mysql.createPool({
-  connectionLimit : 20,
-  host : process.env.RASPIP,
+  connectionLimit : 10,
+  host : "localhost",//process.env.RASPIP,
   user : process.env.DBMYSQLUSER,
   password : process.env.DBMYSQLPASSWORD,
   database : process.env.DBMYSQLDATABASE,
-  connectTimeout: 20000,
 });
 
 // var pool  = mysql.createPool({

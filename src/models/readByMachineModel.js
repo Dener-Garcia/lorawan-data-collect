@@ -10,7 +10,7 @@ WITH ranked AS (
         ORDER BY record_timestamp DESC) AS rn
         FROM iot_lorawan
         WHERE machine = ?
-        ORDER BY val_workcenter ASC
+        ORDER BY val_workcenter DESC
 )
 SELECT *
 FROM ranked

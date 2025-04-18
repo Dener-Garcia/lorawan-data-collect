@@ -10,8 +10,6 @@ const loaderContainer = document.querySelector(".loader")
 
 //configurations.ipRasp = "localhost"; // para teste local
 
- 
-
 navBarMenu(configurations.ipRasp)
 
 
@@ -29,7 +27,6 @@ const getDevice = async () => {
     try { 
        loadScreen("Buscando dados", "status-info", "")
        loaderContainer.classList.remove("d-none")       
-
         const response = await fetch(`http://${configurations.ipRasp}:3050/readAllRemoteIo`)
 
         //console.log(data)
@@ -114,6 +111,8 @@ function loadScreen(message, statusClass, error){
     `
 }
 
+
+
 setInterval(() => {
     getDevice()
-}, 10000);
+}, 30000);

@@ -1,28 +1,35 @@
 import { getData } from "./api/getData.mjs";
 import navBarMenu from "./ui/navBar.mjs";
 import {configurations} from './constants/configurations.mjs';
+import { convertStatusText } from "./helpers/convertStatusText.mjs";
+import { loaderApex } from "../assets/apex-loader.mjs";
 
 const cardsContainer = document.querySelector(".cards-container");
 const loaderContainer = document.querySelector(".loader");
 const historyContainer = document.querySelector(".history-container")
 
-//configurations.ipRasp = "localhost"; // para teste local
-
 navBarMenu(configurations.ipRasp)
-
 
 const readTwiMachines = async () => {
   try {
+
+      const loader = loaderApex()
+
+    cardsContainer.innerHTML = `${loader};`
+    
     const response = await getData(`http://${configurations.ipRasp}:3050/machines/twi_machine`);
 
-    cardsContainer.innerHTML = "";
+    cardsContainer.innerHTML = ""
 
     const machines = {};
-
+    
     response.forEach((input) => {
+
       const { val_workcenter, dev_address, input_generic, input_name, input_value, record_timestamp } = input;
+
       const key = `${dev_address}-${val_workcenter}`;
-      const dateRecord = `${record_timestamp.slice(11, -8)} ${record_timestamp.slice(2, -14)}`;
+
+      const dateRecord = `${record_timestamp.slice(11, -8)} ${record_timestamp.slice(0, -14)}`;
 
       if (!machines[key]) {
         machines[key] = {
@@ -34,20 +41,25 @@ const readTwiMachines = async () => {
         };
       }
 
-      // Atualizar DI0 e DI1 corretamente
+      console.log("###",val_workcenter,input_name, input_value, "valor convertido", convertStatusText(input_value))
+
       if (input_generic === "DI0") {
-        machines[key].DI0 = input_value === "1" ? "Ligado" : "Desligado";
+        machines[key].DI0 = convertStatusText(input_value)
       }
       if (input_generic === "DI1") {
-        machines[key].DI1 = input_value === "1" ? "Ligado" : "Desligado";
+        machines[key].DI1 = convertStatusText(input_value)
       }
+
     });
 
     Object.values(machines).forEach(({ workcenter, dev_address, DI0, DI1, dateRecord }) => {
+
       const card = document.createElement("div");
+
       card.classList.add("card");
 
-      card.innerHTML = `
+      card.innerHTML = 
+      `
                 <div class="content">
                     <div class="title">
                         <h3>Modulo <span>${workcenter}</span></h3>
@@ -64,11 +76,11 @@ const readTwiMachines = async () => {
                         </div>
                         <div class="status">
                             <p>DI0 - Máquina Rodando</p>
-                            <span>${DI0}</span>
+                            <span class="${DI0.className}">${DI0.text}</span>
                         </div>
                         <div class="status">
                             <p>DI1 - Máquina Standby</p>
-                            <span>${DI1}</span>
+                            <span class="${DI1.className}">${DI1.text}</span>
                         </div>
                     </div>
                     <div class="cta">

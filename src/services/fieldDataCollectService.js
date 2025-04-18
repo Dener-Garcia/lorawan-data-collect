@@ -1,6 +1,7 @@
 const fetchDeviceData = require("../utils/fetchGateway");
 const devicesRemoteIo = require("../devices/devicesList");
 const registerFieldTagModel = require("../models/registerFieldTagModel");
+const { inserirPessoa } = require("./saveDataChronos");
 
 const gatewayUrl = process.env.GATEWAYURL;
 const gatewayUser = process.env.GATEWAYUSERNAME;
@@ -40,7 +41,6 @@ const fieldDataCollectService = async () => {
         };
         readResult.push(fieldTag);
       });
-
       registerFieldTagModel(readResult);
     } catch (error) {
       console.log("Error execute routine", error);
