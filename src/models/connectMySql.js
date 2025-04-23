@@ -4,7 +4,7 @@ console.log("dentro arquivo configuracao banco", process.env.RASPIP, process.env
 
 var pool = mysql.createPool({
   connectionLimit : 10,
-  host : "localhost",//process.env.RASPIP,
+  host : process.env.RASPIP,
   user : process.env.DBMYSQLUSER,
   password : process.env.DBMYSQLPASSWORD,
   database : process.env.DBMYSQLDATABASE,
