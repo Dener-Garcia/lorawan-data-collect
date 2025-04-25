@@ -1,7 +1,7 @@
 const fetchDeviceData = require("../utils/fetchGateway");
 const devicesRemoteIo = require("../devices/devicesList");
 const registerFieldTagModel = require("../models/registerFieldTagModel");
-const { inserirPessoa } = require("./saveDataChronos");
+const { saveDataChronos } = require("./saveDataChronos");
 
 const gatewayUrl = process.env.GATEWAYURL;
 const gatewayUser = process.env.GATEWAYUSERNAME;
@@ -14,6 +14,25 @@ const fieldDataCollectService = async () => {
     const { val_workcenter, machine, devAddr, inputs } = device;
 
     //console.log("device dados", val_workcenter, machine, devAddr, inputs);
+
+    const readResult = [fieldTag ={
+          val_workcenter: 'SD24',
+          input_name: 'machine_run',
+          input_value: 1,
+          input_generic: 'i0.0',
+    },
+    fieldTag ={
+      val_workcenter: 'SD25',
+      input_name: 'machine_run',
+      input_value: 1,
+      input_generic: 'i0.2',
+},
+fieldTag ={
+  val_workcenter: 'SD27',
+  input_name: 'machine_run',
+  input_value: 1,
+  input_generic: 'i0.0',
+}];
 
     try {
       const response = await fetchDeviceData(
@@ -41,13 +60,14 @@ const fieldDataCollectService = async () => {
         };
         readResult.push(fieldTag);
       });
-      registerFieldTagModel(readResult);
+      await registerFieldTagModel(readResult);
+      await saveDataChronos(readResult)
     } catch (error) {
       console.log("Error execute routine", error);
     }
   }
 };
 
-setInterval(fieldDataCollectService, 30000);
+setInterval(fieldDataCollectService, 3000);
 
 module.exports = fieldDataCollectService;

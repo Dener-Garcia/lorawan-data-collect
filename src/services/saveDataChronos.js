@@ -27,16 +27,19 @@ const connectToDatabase = async () => {
 };
 
 // Função de salvar os dados no SQL Server
-async function saveDataChronos(fieldTags) {
+async function saveDataChronos(fieldTag) {
+  console.log("Dentro da minh afuncoa", fieldTag)
   try {
     await connectToDatabase(); // Garante que estamos conectados
 
-    for (const tag of fieldTags) {
+    for (const tag of fieldTag) {
       await pool.request()
         .input('val_workcenter', sql.VarChar, tag.val_workcenter)
+        .input('val_tagname', sql.VarChar, tag.input_name)
+        .input('val_valoramostra', sql.Decimal, tag.input_value)
         .query(`
-          INSERT INTO consolidation.tb_DadosWac (Val_WorkCenter, Dtt_Record)
-          VALUES (@val_workcenter, GETDATE())
+          INSERT INTO consolidation.tb_DadosWac (Val_WorkCenter, Val_Linha, Val_ValorAmostra, Dtt_Amostra)
+          VALUES (@val_workcenter, @val_tagname, @val_valoramostra, GETDATE())
         `);
       console.log('✅ Dado inserido com sucesso!', tag);
     }

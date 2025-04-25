@@ -10,14 +10,6 @@ var pool = mysql.createPool({
   database : process.env.DBMYSQLDATABASE,
 });
 
-// var pool  = mysql.createPool({
-//   connectionLimit : 10,
-//   host :'localhost',
-//   user : 'root',
-//   password : 'Dagaxl',
-//   database : process.env.DBMYSQLDATABASE
-// });
-
 const testConnection = async () => {
 
   try {
