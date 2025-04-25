@@ -68,6 +68,6 @@ fieldTag ={
   }
 };
 
-setInterval(fieldDataCollectService, 3000);
+setInterval(fieldDataCollectService, 1000 * 60 * 10 );
 
 module.exports = fieldDataCollectService;
