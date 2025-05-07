@@ -111,7 +111,7 @@ function loadScreen(message, statusClass, error){
     `
 }
 
-
+getDevice()
 
 setInterval(() => {
     getDevice()

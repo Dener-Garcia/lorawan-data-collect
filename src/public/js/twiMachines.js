@@ -15,7 +15,7 @@ const readTwiMachines = async () => {
 
       const loader = loaderApex()
 
-    cardsContainer.innerHTML = `${loader};`
+    cardsContainer.innerHTML = `${loader}`
     
     const response = await getData(`http://${configurations.ipRasp}:3050/machines/twi_machine`);
 

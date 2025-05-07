@@ -15,25 +15,6 @@ const fieldDataCollectService = async () => {
 
     //console.log("device dados", val_workcenter, machine, devAddr, inputs);
 
-    const readResult = [fieldTag ={
-          val_workcenter: 'SD24',
-          input_name: 'machine_run',
-          input_value: 1,
-          input_generic: 'i0.0',
-    },
-    fieldTag ={
-      val_workcenter: 'SD25',
-      input_name: 'machine_run',
-      input_value: 1,
-      input_generic: 'i0.2',
-},
-fieldTag ={
-  val_workcenter: 'SD27',
-  input_name: 'machine_run',
-  input_value: 1,
-  input_generic: 'i0.0',
-}];
-
     try {
       const response = await fetchDeviceData(
         gatewayUrl,
@@ -47,7 +28,7 @@ fieldTag ={
 
       inputAdress.map((input) => {
         const inputData = response.data[input];
-
+a
         fieldTag = {
           dev_address: response.info.devaddr,
           dev_model: response.info.model,

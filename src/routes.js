@@ -5,6 +5,7 @@ const router = express.Router()
 const fieldDataCollectService = require('./services/fieldDataCollectService')
 const saveConsolidationService = require('./services/saveConsolidationService')
 const {clearTableConsolidation, clearTableIotLorawan } = require('./models/clearDatabase')
+const { cleanOldDataChronos } = require('./services/saveDataChronos')
 
 const historicByModuleController = require('./controllers/historicByModuleController')
 
@@ -22,10 +23,17 @@ router.get("/", (req, res) => {
 })
 
 
-setInterval(()=>{
-  clearTableIotLorawan(),
-  clearTableConsolidation()
-}, 1000 * 60 * 60 * 24)
+setInterval(async () => {
+  try {
+    await clearTableIotLorawan();
+    await clearTableConsolidation();
+    await cleanOldDataChronos();
+    console.log("🧹 Limpezas agendadas executadas com sucesso.");
+  } catch (err) {
+    console.error("❌ Erro na execução das limpezas agendadas:", err.message);
+  }
+}, 1000 * 60 * 60 * 24); // a cada 24h
+
 
 
 

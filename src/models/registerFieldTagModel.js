@@ -21,11 +21,11 @@ const registerFieldTagModel = async (fieldTags) => {
     ];
 
     try {
-      const [results] = await pool.execute(query, values);
-      console.log(`Novo registro inserido com ID: ${results.insertId}`);
+      const [results] = await pool.execute(query, values)
+      console.log(`Novo registro inserido com ID: ${results.insertId}`)
     } catch (error) {
-      console.error("[ERROR] Falha ao salvar dados no banco:", error.message);
-      throw error;
+      console.error("[ERROR] Falha ao salvar dados no banco:", error.message)
+      throw error
     }
   }
 };

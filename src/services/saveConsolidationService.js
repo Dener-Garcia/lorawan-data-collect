@@ -81,6 +81,6 @@ const saveConsolidationService = async () => {
   }
 };
 
-setInterval(saveConsolidationService, 60000)
+setInterval(saveConsolidationService, 1000 * 60 * 10 );
 
 module.exports = saveConsolidationService;

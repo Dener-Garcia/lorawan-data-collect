@@ -9,7 +9,12 @@ const config = {
   options: {
     encrypt: false,
     trustServerCertificate: true
-  }
+  },
+pool: {
+  max: 5,              // Máximo de conexões ativas
+  min: 0,               // Mínimo de conexões mantidas no pool
+  idleTimeoutMillis: 30000 // Tempo que a conexão pode ficar ociosa antes de ser fechada
+}
 };
 
 // Criação do pool global
@@ -49,6 +54,24 @@ async function saveDataChronos(fieldTag) {
   }
 }
 
+// Função para limpar dados com mais de 2 meses
+async function cleanOldDataChronos() {
+  try {
+    await connectToDatabase();
+
+    const result = await pool.request().query(`
+      DELETE FROM consolidation.tb_DadosWac
+      WHERE Dtt_Amostra < DATEADD(MONTH, -2, GETDATE())
+    `);
+
+    console.log(`🧹 Limpeza concluída. Registros removidos: ${result.rowsAffected[0]}`);
+  } catch (err) {
+    console.error('❌ Erro ao limpar dados antigos:', err.message);
+  }
+}
+
+// Exporta ambas as funções
 module.exports = {
-  saveDataChronos
+  saveDataChronos,
+  cleanOldDataChronos
 };

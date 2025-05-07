@@ -4,7 +4,7 @@ const clearTableIotLorawan = async () => {
     const query = 
     `
         DELETE FROM iot_lorawan
-        WHERE record_timestamp < NOW() - INTERVAL 12 MONTH;
+        WHERE record_timestamp < NOW() - INTERVAL 2 MONTH;
     `
 
     const clearDatabase = await pool.execute(query)
@@ -16,7 +16,7 @@ const clearTableConsolidation = async () => {
     const query = 
     `
         DELETE FROM lorawan_consolidation
-        WHERE record_timestamp < NOW() - INTERVAL 12 MONTH;
+        WHERE record_timestamp < NOW() - INTERVAL 2 MONTH;
     `
 
     const clearDatabase = await pool.execute(query)
