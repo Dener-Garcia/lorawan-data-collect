@@ -28,7 +28,6 @@ const fieldDataCollectService = async () => {
 
       inputAdress.map((input) => {
         const inputData = response.data[input];
-a
         fieldTag = {
           dev_address: response.info.devaddr,
           dev_model: response.info.model,
@@ -49,6 +48,6 @@ a
   }
 };
 
-setInterval(fieldDataCollectService, 1000 * 60 * 10 );
+setInterval(fieldDataCollectService, 1000 * 60 * 10);
 
 module.exports = fieldDataCollectService;

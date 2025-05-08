@@ -17,7 +17,6 @@ window.onload = (event) => {
     loaderContainer.innerHTML = splash()
   };
 
-
 const getDevice = async () => {
 
     console.log("chamando gateway")
